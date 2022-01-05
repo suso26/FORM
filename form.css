@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.form_container {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "form_head form_head"
+                            "firstname_label firsrname"
+                            "lastname_label lastname"
+                            "password_label password"
+                            "email_label email"
+                            "address_label address"
+                            "gender_label  gender"
+                            "martual_status martual_status" 
+                            "button  button"  
+    ;
+    grid-row-gap: 1rem;
+    padding: 1.8rem;
+}
+
+
+.form_head {
+    grid-area: form_head;
+}
+
+.firstname_label {
+    grid-area: firstname_label;
+}
+
+.firsrname {
+    grid-area: firsrname;
+}
+
+.lastname_label {
+    grid-area: lastname_label;
+}
+
+.lastname {
+    grid-area: lastname;
+}
+
+.password_label {
+    grid-area: 'password_label;
+}
+
+.password {
+    grid-area: password;
+}
+
+.email_label {
+    grid-area: email_label;
+}
+
+.email {
+    grid-area: email;
+}
+
+.address_label {
+  grid-area:  address_label;
+}
+
+.address {
+    grid-area: address;
+}
+
+.gender_label {
+    grid-area: gender_label ;
+}
+
+.gender {
+    grid-area: gender;
+}
+
+.martual_status {
+   grid-area: martual_status;
+   display: flex;
+   flex-direction: row;
+
+}
+
+.button {
+    grid-area:  button;
+    justify-self: center;
+    width: 12rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
